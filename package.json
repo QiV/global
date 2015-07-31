@@ -22,7 +22,8 @@
     "global": "browser/window.js",
     "global/window": "browser/window.js",
     "global/document": "document.js",
-    "global/html": "browser/html.js"
+    "global/html": "browser/html.js",
+    "global/navigator": "browser/navigator.js"
   },
   "dependencies": {
     "min-document": "^2.6.1",
