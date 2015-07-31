@@ -18,7 +18,11 @@
   },
   "browser": {
     "min-document": false,
-    "individual": false
+    "individual": false,
+    "global": "browser/window.js",
+    "global/window": "browser/window.js",
+    "global/document": "document.js",
+    "global/html": "browser/html.js"
   },
   "dependencies": {
     "min-document": "^2.6.1",
