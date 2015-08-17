@@ -1,4 +1,4 @@
-var mock = {
+/*var mock = {
   location: {
     ancestorOrigins: {},
     origin: "",
@@ -11,16 +11,16 @@ var mock = {
     protocol: "",
     href: ""
   }
-};
+};*/
 
 if (typeof window !== "undefined") {
     module.exports = window;
 } else if (typeof global !== "undefined") {
-    module.exports = Object.assign(global, mock);
+    module.exports = Object.assign(global, {});
 } else if (typeof self !== "undefined"){
     module.exports = self;
 } else {
-    module.exports = mock
+    module.exports = {};
 }
 
 

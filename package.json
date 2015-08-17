@@ -19,11 +19,12 @@
   "browser": {
     "min-document": false,
     "individual": false,
-    "global": "browser/window.js",
-    "global/window": "browser/window.js",
-    "global/document": "document.js",
-    "global/html": "browser/html.js",
-    "global/navigator": "browser/navigator.js"
+    ".": "browser/window.js",
+    "./window": "browser/window.js",
+    "./document": "document.js",
+    "./html": "browser/html.js",
+    "./navigator": "browser/navigator.js",
+    "./body": "browser/body.js"
   },
   "dependencies": {
     "min-document": "^2.6.1",
