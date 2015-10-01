@@ -5,7 +5,6 @@
   "keywords": [],
   "author": "Raynos <raynos2@gmail.com>",
   "repository": "git://github.com/Raynos/global.git",
-  "main": "window.js",
   "homepage": "https://github.com/Raynos/global",
   "contributors": [
     {
@@ -16,27 +15,20 @@
     "url": "https://github.com/Raynos/global/issues",
     "email": "raynos2@gmail.com"
   },
-  "browser": {
-    "min-document": false,
-    "individual": false,
-    ".": "browser/window.js",
-    "./window": "browser/window.js",
-    "./document": "document.js",
-    "./html": "browser/html.js",
-    "./navigator": "browser/navigator.js",
-    "./body": "browser/body.js"
-  },
+  "main": "dist/index.js",
+  "browser": "dist/bro.js",
   "dependencies": {
     "min-document": "^2.6.1",
     "process": "~0.5.1"
   },
   "devDependencies": {
-    "tape": "^2.12.0"
+    "tape": "^2.12.0",
+    "babel": "*"
   },
   "license": "MIT",
   "scripts": {
+    "start": "babel src --out-dir dist",
     "test": "node ./test",
-    "build": "browserify test/index.js -o test/static/bundle.js",
     "testem": "testem"
   },
   "testling": {
