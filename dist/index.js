@@ -4,18 +4,19 @@ exports.__esModule = true;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
+var _jsdom = require('jsdom');
+
 var _process2 = require('process');
 
 var _process3 = _interopRequireDefault(_process2);
 
-var _window = {};
-var _body = {};
+var _document = _jsdom.jsdom('<html><body></body></html>');
+var _window = _document.defaultView;
+var _body = _document.body;
 var _console = {};
-var _document = {};
 var _navigator = {};
 var _location = {};
 var _html = {};
-
 exports['default'] = _window;
 exports.window = _window;
 exports.body = _body;

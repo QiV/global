@@ -19,7 +19,8 @@
   "browser": "dist/bro.js",
   "dependencies": {
     "min-document": "^2.6.1",
-    "process": "~0.5.1"
+    "process": "~0.5.1",
+    "jsdom": "*"
   },
   "devDependencies": {
     "tape": "^2.12.0",

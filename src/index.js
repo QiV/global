@@ -1,12 +1,12 @@
-var _window = {};
-var _body = {};
+import { jsdom } from 'jsdom';
+import _process from 'process';
+var _document = jsdom('<html><body></body></html>');
+var _window = _document.defaultView;
+var _body = _document.body;
 var _console = {};
-var _document = {};
 var _navigator = {};
 var _location = {};
 var _html = {};
-
-import _process from 'process';
 export default _window;
 export {
   _window as window,
