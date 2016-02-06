@@ -1,6 +1,8 @@
 'use strict';
 
-exports.__esModule = true;
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
@@ -10,7 +12,7 @@ var _process2 = require('process');
 
 var _process3 = _interopRequireDefault(_process2);
 
-var _document = _jsdom.jsdom('<html><body></body></html>');
+var _document = (0, _jsdom.jsdom)('<html><body></body></html>');
 var _window = _document.defaultView;
 var _body = _document.body;
 var _console = {};
