@@ -16,6 +16,7 @@
     "email": "raynos2@gmail.com"
   },
   "main": "dist/index.js",
+  "jsnext:main": "src/bro.js",
   "browser": "dist/bro.js",
   "dependencies": {
     "min-document": "^2.6.1",

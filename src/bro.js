@@ -19,3 +19,7 @@ export {
 
 
 function noop (){}
+
+//var navigator = window.navigator;
+
+//export {window, document /*navigator*/};
