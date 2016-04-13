@@ -1,16 +1,9 @@
 {
   "name": "global",
-  "version": "4.3.0",
+  "version": "5.0.0",
   "description": "Require global variables",
   "keywords": [],
   "author": "Raynos <raynos2@gmail.com>",
-  "repository": "git://github.com/Raynos/global.git",
-  "homepage": "https://github.com/Raynos/global",
-  "contributors": [
-    {
-      "name": "Raynos"
-    }
-  ],
   "bugs": {
     "url": "https://github.com/Raynos/global/issues",
     "email": "raynos2@gmail.com"
@@ -18,46 +11,13 @@
   "main": "dist/index.js",
   "jsnext:main": "src/bro.js",
   "browser": "dist/bro.js",
-  "dependencies": {
-    "min-document": "^2.6.1",
-    "process": "~0.5.1",
-    "jsdom": "*"
-  },
   "devDependencies": {
-    "tape": "^2.12.0",
-    "babel": "*"
+    "rollup": "*"
   },
   "license": "MIT",
   "scripts": {
-    "start": "babel src --out-dir dist",
-    "test": "node ./test",
-    "testem": "testem"
-  },
-  "testling": {
-    "files": "test/index.js",
-    "browsers": {
-      "ie": [
-        "8",
-        "9",
-        "10"
-      ],
-      "firefox": [
-        "16",
-        "17",
-        "nightly"
-      ],
-      "chrome": [
-        "22",
-        "23",
-        "canary"
-      ],
-      "opera": [
-        "12",
-        "next"
-      ],
-      "safari": [
-        "5.1"
-      ]
-    }
+    "bro": "rollup -i src/bro.js -f cjs -o dist/bro.js",
+    "index": "rollup -i src/index.js -f cjs -o dist/index.js",
+    "start": "npm run bro | npm run index"
   }
 }
