@@ -4,7 +4,6 @@ var _console = console || {log: noop, warn: noop, debug: noop, error: noop, tabl
 var _window = self || window;
 var head = document.head || document.getElementsByTagName('head')[0];
 var process = {};
-export default _window;
 export {
   _window as window,
   _console as console,
@@ -16,10 +15,6 @@ export {
   html,
   process
 };
-
+export default _window;
 
 function noop (){}
-
-//var navigator = window.navigator;
-
-//export {window, document /*navigator*/};
